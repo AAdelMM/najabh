@@ -12,7 +12,7 @@
     
     <h1 class="text-4xl md:text-[4.183rem] text-[#F1E4D0] font-bold leading-snug" style="font-family: 'gumela-bold', sans-serif;">
       {{ __('messages.hero_title') }} <br>
-      <span class="text-[#F1E4D0]">{{ __('messages.hero_subtitle') }}</span>
+      <span class="text-[#F1E4D0] text-2xl">{{ __('messages.hero_subtitle') }}</span>
     </h1>
     
     <p class="mt-6 text-gray-300 text-lg leading-relaxed">
@@ -23,7 +23,7 @@
     <div class="mt-8 flex items-center justify-center gap-4">
       <a href="#contact" 
          class="px-6 py-3 bg-[#F1E4D0] text-black rounded-full font-medium hover:bg-gray-200 transition duration-300">
-        {{ __('messages.start_now') }}
+        {{ __('messages.Explore Ready Projects') }}
       </a>
       <a href="#about" 
          class="px-6 py-3 bg-transparent border border-gray-400 text-[#F1E4D0] rounded-full font-medium hover:bg-gray-700 transition duration-300">
