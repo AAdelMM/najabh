@@ -25,9 +25,9 @@
          class="px-6 py-3 bg-[#F1E4D0] text-black rounded-full font-medium hover:bg-gray-200 transition duration-300">
         {{ __('messages.Explore Ready Projects') }}
       </a>
-      <a href="#about" 
+      <a href="#interest" 
          class="px-6 py-3 bg-transparent border border-gray-400 text-[#F1E4D0] rounded-full font-medium hover:bg-gray-700 transition duration-300">
-        {{ __('messages.learn_method') }}
+        {{ __('messages.register_interest') }}
       </a>
     </div>
   </div>

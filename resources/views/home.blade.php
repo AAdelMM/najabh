@@ -7,6 +7,7 @@
     @include('sections.programs')
     @include('sections.about')
     @include('sections.books')
+    @include('sections.interest')
     <!-- Add more sections as needed -->
 @endsection
 
