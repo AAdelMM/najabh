@@ -4,8 +4,8 @@
 
 @section('content')
     @include('sections.hero')
-    @include('sections.about')
     @include('sections.programs')
+    @include('sections.about')
     @include('sections.books')
     <!-- Add more sections as needed -->
 @endsection

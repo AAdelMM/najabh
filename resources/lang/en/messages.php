@@ -11,4 +11,13 @@ return [
     'books' => 'Books',
     'contact' => 'Contact Us',
     'scroll_down' => 'Scroll Down',
+    'services_title' => 'Our Services',
+    'request_service' => 'Request Service',
+    'service_1_title' => 'Service 1',
+    'service_2_title' => 'Service 2',
+    'service_3_title' => 'Service 3',
+    // Footer contact details
+    'email' => 'Email',
+    'phone' => 'Phone',
+    'address' => 'Address',
 ];

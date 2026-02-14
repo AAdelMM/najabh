@@ -19,19 +19,20 @@
       <div>
         <h4 class="text-lg font-bold mb-4">{{ __('messages.contact_us') }}</h4>
         <ul class="space-y-2 text-gray-300">
-          <li>Email: info@example.com</li>
-          <li>Phone: +1234567890</li>
-          <li>Address: Your Address Here</li>
+          <li>{{ __('messages.email') }}: info@najabh.com</li>
+          <li>{{ __('messages.phone') }}: <span class="text-lg" dir="ltr">+966 11 234 5678</span></li>
+          <li>{{ __('messages.address') }}: Your Address Here</li>
         </ul>
       </div>
       
       <div>
         <h4 class="text-lg font-bold mb-4">{{ __('messages.follow_us') }}</h4>
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-300 hover:text-white transition duration-300">FB</a>
-          <a href="#" class="text-gray-300 hover:text-white transition duration-300">TW</a>
-          <a href="#" class="text-gray-300 hover:text-white transition duration-300">IG</a>
-          <a href="#" class="text-gray-300 hover:text-white transition duration-300">IN</a>
+        <div class="flex">
+         
+          <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2 bg-amber-50 border rounded-[5px] h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/twitter.png')}}" alt="Twitter"></a>
+          <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/insta.png')}}" alt="Instagram"></a>
+          <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/linkedin.png')}}" alt="LinkedIn"></a>
+           <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/facebook.png')}}" alt="Facebook"></a>
         </div>
       </div>
     </div>

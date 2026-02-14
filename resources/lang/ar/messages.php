@@ -19,7 +19,10 @@ return [
     'programs_description' => 'وصف البرامج المتاحة...',
     'program_1_title' => 'البرنامج الأول',
     'program_1_desc' => 'وصف البرنامج الأول...',
-    // ... etc.
+    'program_2_title' => 'البرنامج الثاني',
+    'program_2_desc' => 'وصف البرنامج الثاني...',
+    'program_3_title' => 'البرنامج الثالث',
+    'program_3_desc' => 'وصف البرنامج الثالث...',
     'footer_description' => 'وصف الشركة في الفوتر...',
     'quick_links' => 'روابط سريعة',
     'contact_us' => 'اتصل بنا',
@@ -28,4 +31,13 @@ return [
     'all_rights_reserved' => 'جميع الحقوق محفوظة',
     'learn_more' => 'اعرف المزيد',
     'scroll_down' => 'قم بالتمرير للأسفل',
+    'services_title' => 'خدماتنا',
+    'request_service' => 'اطلب الخدمة',
+    'service_1_title' => 'خدمة 1',
+    'service_2_title' => 'خدمة 2',
+    'service_3_title' => 'خدمة 3',
+    // Footer contact details
+    'email' => 'البريد الإلكتروني',
+    'phone' => 'رقم الهاتف',
+    'address' => 'العنوان',
 ];
