@@ -6,7 +6,7 @@ return [
     'Explore Ready Projects' => ' إكتشف المشاريع الجاهزة',
     'register_interest' => 'سجل اهتمامك',
     'home' => 'الصفحة الرئيسية',
-    'about' => 'عن نجاح',
+    'about' => 'عن نجابة',
     'programs' => 'البرامج',
     'books' => 'الكتب',
     'contact' => 'تواصل معنا',
