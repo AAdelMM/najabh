@@ -1,6 +1,7 @@
 
 @extends('layouts.app')
 @section('title', __('messages.usage_policies'))
+
 <section id="usage-policies" class="policies-section">
     <div class="container">
         <div class="section-header">
