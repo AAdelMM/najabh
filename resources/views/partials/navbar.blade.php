@@ -24,6 +24,9 @@
         <a href="#contact" class="nav-link menu-item hover:text-white transition-all duration-300 rounded-full px-4 py-2" data-section="contact">
           {{ __('messages.contact') }}
         </a>
+        <a href="#videos_lib" class="nav-link menu-item hover:text-white transition-all duration-300 rounded-full px-4 py-2" data-section="videos_lib">
+          {{ __('messages.videos_lib') }}
+        </a>
       </div>
 
   

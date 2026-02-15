@@ -8,6 +8,7 @@
     @include('sections.about')
     @include('sections.books')
     @include('sections.interest')
+    @include('sections.video')
     <!-- Add more sections as needed -->
 @endsection
 
