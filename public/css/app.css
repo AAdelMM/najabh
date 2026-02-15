@@ -590,6 +590,7 @@ flex-direction: column;
             gap: 25px;
             max-width: 1100px;
             margin: 0 auto;
+            height: 500px;
         }
 
         /* تصميم الكروت (Placeholders) */
@@ -614,15 +615,18 @@ flex-direction: column;
         /* أحجام الفيديوهات */
         .youtube-box {
             aspect-ratio: 16 / 9;
+            
         }
 
         .tiktok-column {
             display: flex;
             flex-direction: column;
             gap: 25px;
-            
+            height: 100%;
         }
-
+.tiktok-placeholder{
+    height: 100%;
+}
         .tiktok-box {
             aspect-ratio: 9 / 16;
         }
