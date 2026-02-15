@@ -2,7 +2,7 @@
 <!-- form style -->
 
 <style>
-    /* From Uiverse.io by ammarsaa */ 
+    
 .formR {
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   padding-left: 30px;
-  color: #00bfff;
+  color: #f2e5d1;
 }
 
 .titleR::before {
@@ -46,7 +46,7 @@
   width: 16px;
   border-radius: 50%;
   left: 0px;
-  background-color: #00bfff;
+  background-color: #f2e5d1;
 }
 
 .messageR, 
@@ -64,7 +64,7 @@
 }
 
 .signin a {
-  color: #00bfff;
+  color: #f2e5d1;
 }
  label .inputR {
   background-color: #333;
@@ -114,10 +114,10 @@
   outline: none;
   padding: 10px;
   border-radius: 10px;
-  color: #fff;
+  color: #1a1a1a;
   font-size: 16px;
   transform: .3s ease;
-  background-color: #00bfff;
+  background-color: #f2e5d1;
 }
 
 .submit:hover {

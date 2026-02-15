@@ -33,12 +33,5 @@
   </div>
 
   <!-- Scroll Indicator -->
-  <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 opacity-70 animate-bounce">
-    <div class="text-center">
-      <span class="text-sm text-gray-300 mb-2 block">{{ __('messages.scroll_down') }}</span>
-      <svg class="w-6 h-6 text-gray-300 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-      </svg>
-    </div>
-  </div>
+ 
 </section>
