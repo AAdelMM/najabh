@@ -1,4 +1,4 @@
-<section id="videos_lib" class="py-16 bg-gray-400">
+<section id="videos_lib" class="py-16 bg-black text-white">
 
     <div class="section-header">
         <h2>مركز المعرفة المرئية</h2>
