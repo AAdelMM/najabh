@@ -40,7 +40,9 @@ body {
 
 /*register your interest section styles start*/
 
-    
+    #interest p{
+        color: #fff;
+    }
 .formR {
   display: flex;
   flex-direction: column;
