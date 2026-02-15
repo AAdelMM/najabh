@@ -738,4 +738,309 @@ flex-direction: column;
         }
 /*videos section styles end*/   
 
+/*our programs start*/
+
+.programs-section {
+        background-color: #0b0f19; /* متناسق مع الأقسام السابقة */
+        padding: 100px 20px;
+        font-family: 'Cairo', sans-serif;
+        position: relative;
+    }
+
+    .programs-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* تنسيق العنوان */
+    .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .section-header .badge {
+        color: var(--primary, #f2a900);
+        background: rgba(242, 169, 0, 0.1);
+        padding: 5px 20px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+        color: #fff;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .section-header .header-line {
+        width: 80px;
+        height: 3px;
+        background: var(--primary, #f2a900);
+        margin: 0 auto 20px;
+        border-radius: 5px;
+    }
+
+    .section-header p {
+        color: #a0aec0;
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+
+    /* شبكة البرامج */
+    .programs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    /* تصميم الكارت */
+    .program-card {
+        position: relative;
+        background: #161e2d; /* لون كروت سكشن "عن المنصة" */
+        border-radius: 24px;
+        padding: 40px 30px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .program-card:hover {
+        transform: translateY(-12px);
+        border-color: rgba(242, 169, 0, 0.4);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* تأثير الإضاءة الخلفية للكارت عند الهوفر */
+    .card-glow {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(circle at top right, rgba(242, 169, 0, 0.1), transparent);
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    .program-card:hover .card-glow {
+        opacity: 1;
+    }
+
+    .program-icon {
+        font-size: 3rem;
+        margin-bottom: 25px;
+        display: inline-block;
+    }
+
+    .program-card h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .program-card p {
+        color: #a0aec0;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+
+    /* زر "تعرف على المزيد" */
+    .learn-more-btn {
+        color: #f2a900;
+        text-decoration: none;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s;
+    }
+
+    .learn-more-btn svg {
+        transition: transform 0.3s;
+    }
+
+    .learn-more-btn:hover {
+        color: #fff;
+    }
+
+    .learn-more-btn:hover svg {
+        transform: translateX(-5px); /* للتحريك بجهة العربي */
+    }
+
+    /* موبايل */
+    @media (max-width: 768px) {
+        .section-header h2 { font-size: 2rem; }
+        .programs-grid { grid-template-columns: 1fr; }
+    }
+
+/*our programs end*/
+
+/*usage policies section styles start*/
+.policies-section {
+        background-color: #0b0f19;
+        padding: 80px 20px;
+        font-family: 'Cairo', sans-serif;
+        color: #fff;
+        text-align: center;
+    align-content: center;
+        border: #00bfff 1px solid;
+        padding: auto;
+    }
+    .policies-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .expand-policy-btn {
+        background: transparent;
+        color: #f2a900;
+        border: 2px solid #f2a900;
+        padding: 15px 40px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .expand-policy-btn:hover {
+        background: #f2a900;
+        color: #000;
+        box-shadow: 0 0 20px rgba(242, 169, 0, 0.4);
+    }
+
+    /* الدرج المنسدل */
+    .policy-drawer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #161e2d;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .full-content-box {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* تقسيم المحتوى لعمودين في الشاشات الكبيرة */
+        gap: 30px;
+    }
+
+    .policy-item h3 {
+        color: #f2a900;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        border-right: 3px solid #f2a900;
+        padding-right: 15px;
+    }
+
+    .policy-item p {
+        color: #a0aec0;
+        line-height: 1.8;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .policy-item.alert {
+        grid-column: span 2;
+        background: rgba(242, 169, 0, 0.05);
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px dashed rgba(242, 169, 0, 0.3);
+        text-align: center;
+    }
+
+    @media (max-width: 900px) {
+        .full-content-box { grid-template-columns: 1fr; padding: 25px; }
+        .policy-item.alert { grid-column: span 1; }
+    }
+/*usage policies section styles end*/
+
+/*privacy policy section styles start*/
+.privacy-section {
+        background-color: #0b0f19;
+        padding: 80px 20px;
+        font-family: 'Cairo', sans-serif;
+        color: #fff;
+        border-top: 1px solid rgba(242, 169, 0, 0.1); /* فاصل بسيط عن السياسات السابقة */
+    }
+.privacy-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .expand-privacy-btn {
+        background: rgba(242, 169, 0, 0.05);
+        color: #f2a900;
+        border: 2px solid #f2a900;
+        padding: 15px 40px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .expand-privacy-btn:hover {
+        background: #f2a900;
+        color: #000;
+        box-shadow: 0 0 25px rgba(242, 169, 0, 0.3);
+    }
+
+    /* تنسيق الدرج المنسدل */
+    .policy-drawer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        background: #161e2d;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+
+    .full-content-box {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .policy-item h3 {
+        color: #f2a900;
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+        border-right: 3px solid #f2a900;
+        padding-right: 15px;
+    }
+
+    .policy-item p {
+        color: #cbd5e0;
+        line-height: 1.8;
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .policy-item.alert {
+        grid-column: span 2;
+        background: rgba(255, 255, 255, 0.02);
+        padding: 25px;
+        border-radius: 15px;
+        border: 1px solid rgba(242, 169, 0, 0.2);
+    }
+
+    @media (max-width: 900px) {
+        .full-content-box { grid-template-columns: 1fr; padding: 30px; }
+        .policy-item.alert { grid-column: span 1; }
+    }
+/*privacy policy section styles end*/
+
 

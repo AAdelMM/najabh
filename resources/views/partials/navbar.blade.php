@@ -4,7 +4,7 @@
       
       <!-- Logo - Always visible and positioned -->
       <div class="flex items-center z-50">
-        <img src="{{asset('images/light_logo.png')}}" alt="Logo" class="h-8">
+        <a href="/"><img src="{{asset('images/light_logo.png')}}" alt="Logo" class="h-8"></a>
       </div>
 
       <!-- Navigation Menu - Will animate -->

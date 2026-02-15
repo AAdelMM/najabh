@@ -56,4 +56,6 @@ return [
     'phone' => 'رقم الهاتف',
     'address' => 'العنوان',
     'videos_lib' => 'مكتبة الفيديوهات',
+    'usage_policies' => 'سياسات الاستخدام',
+    'privacy_policy' => 'سياسة الخصوصية',
 ];

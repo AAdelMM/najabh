@@ -13,6 +13,9 @@
           <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">{{ __('messages.about') }}</a></li>
           <li><a href="#programs" class="text-gray-300 hover:text-white transition duration-300">{{ __('messages.programs') }}</a></li>
           <li><a href="#books" class="text-gray-300 hover:text-white transition duration-300">{{ __('messages.books') }}</a></li>
+          <li><a href="/privacy-policy" class="text-gray-300 hover:text-white transition duration-300">{{ __('messages.privacy_policy') }}</a></li>
+          <li><a href="/usage.blade.php" class="text-gray-300 hover:text-white transition duration-300">{{ __('messages.usage_policies') }}</a></li>
+          
         </ul>
       </div>
       
