@@ -545,7 +545,7 @@ flex-direction: column;
         }
 
         .video-section {
-            padding: 50px 20px;
+            padding: 50px 50px;
             background-color: var(--bg-light);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
@@ -553,6 +553,7 @@ flex-direction: column;
 
         .section-header {
             margin-bottom: 40px;
+            margin-right: 50px;
         }
 
         .section-header h2 {
@@ -596,7 +597,7 @@ flex-direction: column;
 
         /* فيديو اليوتيوب (16:9) */
         .youtube-placeholder {
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 9/16;
             grid-column: span 1;
         }
 
