@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@yield('title', __('messages.hero_title'))</title>
-  <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   
   <!-- CSS حسب اللغة -->
   @if(app()->getLocale() == 'ar')
-    <link rel="stylesheet" href="{{ asset('/css/ar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ar.css') }}">
   @else
-    <link rel="stylesheet" href="{{ asset('/css/en.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/en.css') }}">
   @endif
   
   <script src="https://cdn.tailwindcss.com"></script>
