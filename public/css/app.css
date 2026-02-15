@@ -615,6 +615,7 @@ flex-direction: column;
             display: flex;
             flex-direction: column;
             gap: 25px;
+            height: 100%;
         }
 
         .tiktok-box {
