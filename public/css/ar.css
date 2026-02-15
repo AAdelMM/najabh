@@ -537,99 +537,115 @@ flex-direction: column;
 /*videos section styles start*/
 #videos_lib {
   padding: 4rem 0;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                              url('https://img.pikbest.com/backgrounds/20250116/view-of-starry-night-sky-with-nature-and-mountains-landscape-ai_11393164.jpg!w700wp');
 }
 :root {
-            --primary-color: #1a2a6c; /* لون أزرق مالي احترافي */
-            --accent-color: #f2a900;  /* لون ذهبي للثقة */
-            --bg-light: #f8f9fa;
+            --accent-color: #f2a900; /* ذهبي للثقة والتميز */
+            --text-light: #ffffff;
         }
 
         .video-section {
-            padding: 50px 20px;
-            background-color: var(--bg-light);
+            padding: 80px 20px;
+            max-height: 500px;
+            /* إضافة الصورة التي اخترتها كخلفية */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+                              url('https://img.pikbest.com/backgrounds/20250116/view-of-starry-night-sky-with-nature-and-mountains-landscape-ai_11393164.jpg!w700wp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* تأثير Parallax بسيط عند التمرير */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
+            color: var(--accent-color);
         }
 
         .section-header {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .section-header h2 {
-            color: var(--primary-color);
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(21, 14, 14, 0.5);
+            color: var(--accent-color)!important;
+            margin-right: 20px;
         }
 
         .section-header p {
-            color: #666;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+            color: var(--text-light)!important;
         }
 
         /* حاوية الفيديوهات */
         .video-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr; /* فيديو يوتيوب عريض والآخرين بجانبه */
-            gap: 20px;
-            max-width: 1200px;
+            grid-template-columns: 2fr 1fr; 
+            gap: 25px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
-        /* التصميم العام للمكان المحجوز (Placeholder) */
+        /* تصميم الكروت (Placeholders) */
         .placeholder-card {
-            background: #ddd;
-            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1); /* شفافية لتعطي مظهر زجاجي */
+            backdrop-filter: blur(5px); /* تأثير الضبابية الزجاجية */
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
-            border: 2px dashed #bbb;
-            color: #888;
-            transition: 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
         }
 
         .placeholder-card:hover {
+            transform: translateY(-5px);
             border-color: var(--accent-color);
-            background: #eee;
+            background: rgba(255, 255, 255, 0.15);
         }
-
-        /* فيديو اليوتيوب (16:9) */
-        .youtube-placeholder {
+.placeholder-card .tiktok-placeholder{
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+        /* أحجام الفيديوهات */
+        .youtube-box {
             aspect-ratio: 16 / 9;
-            grid-column: span 1;
         }
 
-        /* حاوية فيديوهات التيك توك (9:16) */
         .tiktok-column {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
+            height: 100%;
         }
 
-        .tiktok-placeholder {
+        .tiktok-box {
             aspect-ratio: 9 / 16;
-            flex: 1;
         }
 
-        .play-icon {
-            font-size: 40px;
-            opacity: 0.5;
+        .icon-play {
+            font-size: 50px;
+            color: var(--accent-color);
+            margin-bottom: 10px;
         }
 
-        /* للموبايل: ترتيب العناصر تحت بعضها */
-        @media (max-width: 768px) {
+        /* تحسينات الموبايل */
+        @media (max-width: 850px) {
             .video-grid {
                 grid-template-columns: 1fr;
             }
             .tiktok-column {
                 flex-direction: row;
-                overflow-x: auto; /* سحب جانبي في الموبايل */
-                padding-bottom: 10px;
+                overflow-x: auto;
+                padding: 10px 0;
             }
-            .tiktok-placeholder {
-                min-width: 200px;
-                aspect-ratio: 9 / 16;
+            .tiktok-box {
+                min-width: 250px;
             }
         }
 /*videos section styles end*/   
