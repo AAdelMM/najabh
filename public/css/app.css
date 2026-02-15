@@ -606,7 +606,12 @@ flex-direction: column;
             border-color: var(--accent-color);
             background: rgba(255, 255, 255, 0.15);
         }
-
+.placeholder-card .tiktok-placeholder{
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
         /* أحجام الفيديوهات */
         .youtube-box {
             aspect-ratio: 16 / 9;
