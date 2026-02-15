@@ -539,6 +539,10 @@ flex-direction: column;
   padding: 4rem 0;
    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
                               url('https://img.pikbest.com/backgrounds/20250116/view-of-starry-night-sky-with-nature-and-mountains-landscape-ai_11393164.jpg!w700wp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* تأثير Parallax بسيط عند التمرير */
+    background-repeat: no-repeat;
 }
 :root {
             --accent-color: #f2a900; /* ذهبي للثقة والتميز */
@@ -547,7 +551,7 @@ flex-direction: column;
 
         .video-section {
             padding: 80px 20px;
-            max-height: 500px;
+           
             /* إضافة الصورة التي اخترتها كخلفية */
             background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
                               url('https://img.pikbest.com/backgrounds/20250116/view-of-starry-night-sky-with-nature-and-mountains-landscape-ai_11393164.jpg!w700wp');
@@ -606,12 +610,7 @@ flex-direction: column;
             border-color: var(--accent-color);
             background: rgba(255, 255, 255, 0.15);
         }
-.placeholder-card .tiktok-placeholder{
-    width: 60px;
-    height: 60px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}
+
         /* أحجام الفيديوهات */
         .youtube-box {
             aspect-ratio: 16 / 9;
@@ -621,7 +620,7 @@ flex-direction: column;
             display: flex;
             flex-direction: column;
             gap: 25px;
-            height: 100%;
+            
         }
 
         .tiktok-box {
