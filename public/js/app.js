@@ -44,3 +44,34 @@ function togglePrivacyDrawer() {
         icon.style.transform = "rotate(180deg)";
     }
 }
+
+//cards in our programs
+function showProgramDetails(id) {
+    // جلب العناصر
+    const title = document.getElementById('title-' + id).innerText;
+    const fullContent = document.getElementById('full-text-' + id).innerHTML;
+    const icon = document.querySelector(`#card-${id} .program-icon`).innerText;
+    
+    // حقن البيانات في لوحة العرض
+    document.getElementById('details-title').innerText = title;
+    document.getElementById('details-text').innerHTML = fullContent;
+    document.getElementById('details-icon').innerText = icon;
+    
+    // إظهار اللوحة
+    const panel = document.getElementById('program-details-panel');
+    panel.style.display = 'block'; // التأكد من أنه ليس hidden
+    
+    setTimeout(() => {
+        panel.classList.add('active');
+        // تمرير الشاشة للوحة
+        panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 10);
+}
+
+function hideProgramDetails() {
+    const panel = document.getElementById('program-details-panel');
+    panel.classList.remove('active');
+    setTimeout(() => {
+        if(!panel.classList.contains('active')) panel.style.display = 'none';
+    }, 600);
+}
