@@ -3,7 +3,7 @@ return [
     'hero_title' => ' نجابة – مفاتيح السوق  ',
     'hero_subtitle' => 'الوعي. القرار. النظام.',
     'hero_description' => 'منصة تبني عقلًا استراتيجيًا، وتصمم نظامًا ماليًا مستدامًا لصنّاع المستقبل.',
-    'Explore Ready Projects' => ' إكتشف المشاريع الجاهزة',
+    'Explore Ready Projects' => ' أحجز خطتك المالية',
     'register_interest' => 'سجل اهتمامك',
     'home' => 'الصفحة الرئيسية',
     'about' => 'عن نجابة',

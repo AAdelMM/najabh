@@ -34,16 +34,16 @@
         <span>{{ __('messages.email') }}</span>
     </label> 
         
-    <label>
+  <!--   <label>
         <input class="inputR" type="password" placeholder="" required="">
         <span>{{ __('messages.password') }}</span>
     </label>
     <label>
         <input class="inputR" type="password" placeholder="" required="">
         <span>{{ __('messages.confirm_password') }}</span>
-    </label>
+    </label> -->
     <button class="submit">{{ __('messages.register_interest') }}</button>
-    <p class="signin">{{ __('messages.already_have_account') }} <a href="#">{{ __('messages.signin') }}</a> </p>
+   <!--  <p class="signin">{{ __('messages.already_have_account') }} <a href="#">{{ __('messages.signin') }}</a> </p> -->
 </form>
 </div>
 </section>
