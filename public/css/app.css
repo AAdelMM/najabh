@@ -260,6 +260,21 @@ body {
     .founder-info h3 { color: var(--accent); font-size: 2rem; margin-bottom: 5px; }
     .founder-tagline { color: var(--text-dim); font-style: italic; margin-bottom: 20px; }
     .founder-bio-text p { margin-bottom: 15px; text-align: justify; font-size: 1.05rem; }
+    .founder-image {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 20px;
+        overflow: hidden; /* لقص زوايا الصورة */
+        border: 2px solid var(--primary, #f2a900);
+    }
+
+    /* تنسيق الصورة نفسها */
+    .founder-img-fluid {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover; /* لضمان عدم تمدد الصورة بشكل خاطئ */
+    }
 
     @media (max-width: 900px) {
         .about-container { grid-template-columns: 1fr; }

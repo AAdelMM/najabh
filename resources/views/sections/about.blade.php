@@ -39,9 +39,12 @@
         <div id="founder-expandable" class="founder-collapsed-content">
             <div class="founder-card-wrapper">
                 <div class="founder-image">
-                    {{-- <img src="{{ asset('images/bashayer.jpg') }}" alt="بشاير الزهراني"> --}}
-                    <div class="img-placeholder">صورة المؤسس</div>
-                </div>
+            @if(file_exists(public_path('images/bashayer.jpg')))
+                <img src="{{ asset('images/bashayer.jpg') }}" alt="بشاير الزهراني" class="founder-img-fluid">
+            @else
+                <div class="img-placeholder">بشاير الزهراني</div>
+            @endif
+        </div>
                 <div class="founder-info">
                     <h3>بشاير الزهراني</h3>
                     <p class="founder-tagline">مصممة ومحللة فرص استثمارية | ماجستير إدارة أعمال</p>
