@@ -8,7 +8,7 @@
             <div class="about-actions">
                 <button class="btn-primary">ابدأ رحلتك الآن</button>
                 <button class="btn-founder-toggle" onclick="toggleFounderBio()">
-                    عن المؤسس <i id="arrow-icon" class="fas fa-chevron-down"></i>
+                    عن المؤسس <i id="arrow-icon"  class=" fa-solid fa-chevron-down" style="color: rgb(255, 212, 59);"></i>
                 </button>
             </div>
         </div>
