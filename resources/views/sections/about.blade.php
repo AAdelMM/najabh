@@ -1,4 +1,11 @@
-<section id="about" class="about-platform">
+
+<div class="wave-divider">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" style="fill: #161e2d; height: 60px; width: 100%; transform: rotate(180deg);">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+</div>
+
+<section id="about" class="about-platform slanted-section">
    <div class="about-container">
         <div class="about-text">
             <h2>رؤية مالية.. بلمسة عصرية</h2>
@@ -40,7 +47,7 @@
             <div class="founder-card-wrapper">
                 <div class="founder-image">
             @if(file_exists(public_path('images/bashayer.jpg')))
-                <img src="{{ asset('images/bashayer.jpg') }}" alt="بشاير الزهراني" class="founder-img-fluid">
+                <img src="{{ asset('images/bashayer.jpg') }}" alt="بشاير الزهراني مؤسس منصة نجابة لمفاتيح السوق " class="founder-img-fluid">
             @else
                 <div class="img-placeholder">بشاير الزهراني</div>
             @endif

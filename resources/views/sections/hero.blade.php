@@ -9,7 +9,7 @@
 
   <!-- Content -->
   <div class="relative z-10 max-w-3xl mx-auto">
-    
+    <h1 style="display:none;">نجابة للاستشارات - بناء الأصول الاستثمارية والفكر الاستراتيجي</h1>
     <h1 class="text-4xl md:text-[4.183rem] text-[#F1E4D0] font-bold leading-snug" style="font-family: 'gumela-bold', sans-serif;">
       {{ __('messages.hero_title') }} <br>
       <span class="text-[#F1E4D0] text-2xl">{{ __('messages.hero_subtitle') }}</span>

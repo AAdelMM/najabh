@@ -1,5 +1,5 @@
-
 <section id="services" class="py-20 px-6 bg-black min-h-screen flex items-center">
+ 
   <div class="container mx-auto max-w-6xl">
     <div class="text-right mb-16">
       <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">{{ __('messages.services_title') }}</h2>
@@ -19,3 +19,4 @@
     </div>
   </div>
 </section>
+ <div class="section-divider-glow"></div>

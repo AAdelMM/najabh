@@ -41,6 +41,43 @@ button {
     font-family: 'gumela-bold', sans-serif;
 }
 
+/* --- 2. فواصل الأقسام (Section Dividers) --- */
+    
+    /* الفاصل المضيء البسيط */
+    .section-divider-glow {
+        height: 1px;
+        width: 60%;
+        margin: 80px auto;
+        background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+        position: relative;
+        opacity: 0.6;
+    }
+
+    .section-divider-glow::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 30px;
+        background: radial-gradient(circle, rgba(242, 169, 0, 0.3) 0%, transparent 70%);
+        filter: blur(15px);
+    }
+.section-divider-glow-darkblue {
+        height: 1px;
+        width: 60%;
+        margin: 80px auto;
+        position: relative;
+        opacity: 0.6;
+    }
+    .slanted-section {
+    position: relative;
+    padding-bottom: 150px; /* مساحة للزاوية */
+    background: #000; /* خلفية السكشن السوداء */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    margin-bottom: -100px; /* لسحب السكشن التالي فوق الفراغ */
+}
 /*register your interest section styles start*/
 
     #interest p{

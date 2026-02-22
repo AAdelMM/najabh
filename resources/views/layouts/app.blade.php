@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() == 'ar' ? 'rtl' : 'ltr' }}">
 <head>
+  <title>نجابة | منصة تصميم القرارات الاستثمارية في السوق السعودي</title>
+
+    <meta name="description" content="منصة نجابة المتخصصة في تحليل الأسواق وبناء الأصول الاستثمارية الفكرية. نقدم برامج واف، ألف لام، وسين لتطوير الوعي المالي واتخاذ قرارات استثمارية قائمة على التحليل.">
+
+    <meta name="keywords" content="استثمار، السوق السعودي، تخطيط مالي، نجابة، بشاير الزهراني، تحليل اقتصادي، بناء ثروة">
+
+    <meta http-equiv="content-language" content="ar">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>@yield('title', __('messages.hero_title'))</title>

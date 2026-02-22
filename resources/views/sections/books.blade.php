@@ -1,5 +1,6 @@
 
 
+
 <section id="books" class="py-20 px-6 bg-black min-h-screen flex items-center">
   <div class="book-container" id="book-container">
     <!-- Book 1 -->
@@ -65,7 +66,9 @@
       </div>
     </div>
   </div>
+
 </section>
+ <div class="section-divider-glow"></div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
