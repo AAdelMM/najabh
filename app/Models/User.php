@@ -6,6 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Panel;
 
 class User extends Authenticatable
 {
@@ -32,12 +33,12 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-    public function canAccessPanel(): bool
+    public function canAccessPanel(Panel $panel): bool
     {
         // هذا يسمح لجميع المستخدمين المسجلين بالدخول، يمكنك تخصيصها لاحقاً
-        return true; 
+        //return true; 
         // أو إذا كنت تريد تقييدها ببريدك فقط:
-        // return str_ends_with($this->email, '@yourdomain.com');
+         return str_ends_with($this->email, 'admin@gmail.com');
     }
     /**
      * Get the attributes that should be cast.
