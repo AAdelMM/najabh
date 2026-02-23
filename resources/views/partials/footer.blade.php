@@ -23,8 +23,8 @@
         <h4 class="text-lg font-bold mb-4">{{ __('messages.contact_us') }}</h4>
         <ul class="space-y-2 text-gray-300">
           <li>{{ __('messages.email') }}: info@najabh.com</li>
-          <li>{{ __('messages.phone') }}: <span class="text-lg" dir="ltr">+966 11 234 5678</span></li>
-          <li>{{ __('messages.address') }}: Your Address Here</li>
+          <li>{{ __('messages.phone') }}: <span class="text-lg" dir="ltr">0570081875</span></li>
+          <li>{{ __('messages.address') }}: المملكة العربية السعودية</li>
         </ul>
       </div>
       
@@ -40,7 +40,7 @@
       </div>
     </div>
     
-    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400" dir="ltr">
       <p>&copy; {{ date('Y') }} {{ __('messages.company_name') }}. {{ __('messages.all_rights_reserved') }}</p>
     </div>
   </div>
