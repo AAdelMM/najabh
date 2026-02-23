@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+//use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -32,7 +32,7 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-public function canAccessPanel(Panel $panel): bool
+    public function canAccessPanel(): bool
     {
         // هذا يسمح لجميع المستخدمين المسجلين بالدخول، يمكنك تخصيصها لاحقاً
         return true; 
