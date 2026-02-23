@@ -32,10 +32,10 @@
         <h4 class="text-lg font-bold mb-4">{{ __('messages.follow_us') }}</h4>
         <div class="icons">
          
-          <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2 bg-amber-50 border rounded-[5px] h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/twitter.png')}}" alt="Twitter"></a>
-          <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/insta.png')}}" alt="Instagram"></a>
-          <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/linkedin.png')}}" alt="LinkedIn"></a>
-           <a href="#" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/facebook.png')}}" alt="Facebook"></a>
+          <a href="https://x.com/NAJABH1" class="text-gray-300 hover:scale-110 transition duration-300 mx-2 bg-amber-50 border rounded-[5px] h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/twitter.png')}}" alt="Twitter"></a>
+          <a href="https://www.instagram.com/najabh1/" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/insta.png')}}" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/@najabh1" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center "><img src="{{asset('images/tiktok.png')}}" alt="TikTok"></a>
+           <a href="https://www.youtube.com/@najabh" class="text-gray-300 hover:scale-110 transition duration-300 mx-2  h-[50px] w-[50px] flex items-center justify-center"><img src="{{asset('images/youtube.png')}}" alt="YouTube"></a>
         </div>
       </div>
     </div>
