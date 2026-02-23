@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\SetLocale;
+use App\Http\Controllers\InterestController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/lang/{locale}', [HomeController::class, 'switchLang']) ->name('switch.lang')
@@ -13,4 +14,6 @@ Route::get('/usage.blade.php', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy');
 })->name('privacy.policy');
+
+Route::post('/register-interest', [InterestController::class, 'store'])->name('interest.store');
 
