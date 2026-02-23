@@ -32,7 +32,13 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
+public function canAccessPanel(Panel $panel): bool
+    {
+        // هذا يسمح لجميع المستخدمين المسجلين بالدخول، يمكنك تخصيصها لاحقاً
+        return true; 
+        // أو إذا كنت تريد تقييدها ببريدك فقط:
+        // return str_ends_with($this->email, '@yourdomain.com');
+    }
     /**
      * Get the attributes that should be cast.
      *
