@@ -10,6 +10,7 @@
     @include('sections.books')
     @include('sections.interest')
     @include('sections.video')
+    @include('sections.news')
     <!-- Add more sections as needed -->
 @endsection
 

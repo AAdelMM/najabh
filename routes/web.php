@@ -6,6 +6,7 @@ use App\Http\Middleware\SetLocale;
 use App\Http\Controllers\InterestController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
+use App\Http\Controllers\SeenNewsletterController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/lang/{locale}', [HomeController::class, 'switchLang']) ->name('switch.lang')
@@ -18,6 +19,7 @@ Route::get('/privacy-policy', function () {
 })->name('privacy.policy');
 
 Route::post('/register-interest', [InterestController::class, 'store'])->name('interest.store');
+Route::post('/seen-subscribe', [SeenNewsletterController::class, 'subscribe'])->name('seen.subscribe');
 
 Route::get('/fix-storage', function () {
     // 1. محاولة حذف الاختصار القديم إذا كان موجوداً كملف معطل
