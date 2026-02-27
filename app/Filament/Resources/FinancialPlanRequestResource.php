@@ -24,6 +24,9 @@ class FinancialPlanRequestResource extends Resource
     protected static ?string $model = FinancialPlanRequest::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $modelLabel = 'طلب تخطيط مالي'; // للمفرد
+    protected static ?string $pluralModelLabel = 'طلبات التخطيط المالي'; // للجمع
+    protected static ?string $navigationLabel = 'الطلبات'; // الاسم في القائمة الجانبية
 
     public static function form(Form $form): Form
     {
