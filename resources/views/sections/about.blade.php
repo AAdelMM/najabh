@@ -46,8 +46,8 @@
         <div id="founder-expandable" class="founder-collapsed-content">
             <div class="founder-card-wrapper">
                 <div class="founder-image">
-            @if(file_exists(public_path('images/bashayer.jpg')))
-                <img src="{{ asset('images/bashayer.jpg') }}" alt="بشاير الزهراني مؤسس منصة نجابة لمفاتيح السوق " class="founder-img-fluid">
+            @if(file_exists(public_path('images/bashayer.webp')))
+                <img src="{{ asset('images/bashayer.webp') }}" alt="بشاير الزهراني مؤسس منصة نجابة لمفاتيح السوق " class="founder-img-fluid">
             @else
                 <div class="img-placeholder">بشاير الزهراني</div>
             @endif

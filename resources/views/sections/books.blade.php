@@ -7,18 +7,18 @@
     <div class="book" data-book="1">
       <!-- Small state -->
       <div class="book-small">
-        <img src="{{ asset('images/book1.png') }}" alt="شيفرة المال">
+        <img src="{{ asset('images/book1.webp') }}" alt="شيفرة المال">
       </div>
       
       <!-- Expanded state -->
       <div class="book-expanded">
         <button class="close-btn">&times;</button>
         <div class="book-image">
-          <img src="{{ asset('images/boook1.png') }}" alt="شيفرة المال">
+          <img src="{{ asset('images/boook1.webp') }}" alt="شيفرة المال">
         </div>
         <div class="content">
           <div class="title">
-            <img src="{{ asset('images/book1-expand.png') }}" alt="شيفرة المال">
+            <img src="{{ asset('images/book1-expand.webp') }}" alt="شيفرة المال">
           </div>
           <h2>شيفرة المال</h2>
           <p>كتاب شيفرة المال هو دليل شامل لفهم كيفية عمل المال في العالم الحديث. يستعرض الكتاب المبادئ الأساسية لإدارة المال، والاستثمار، والادخار، ويوفر نصائح عملية لتحقيق الاستقلال المالي. من خلال قراءة هذا الكتاب، ستتعلم كيفية اتخاذ قرارات مالية ذكية تساعدك على بناء مستقبل مالي مستقر ومزدهر.</p>
@@ -30,14 +30,14 @@
     <div class="book" data-book="2">
       <!-- Small state -->
       <div class="book-small">
-        <img src="{{ asset('images/book2.png') }}" alt="كتاب ثاني">
+        <img src="{{ asset('images/book2.webp') }}" alt="كتاب ثاني">
       </div>
       
       <!-- Expanded state -->
       <div class="book-expanded">
         <button class="close-btn">&times;</button>
         <div class="book-image">
-          <img src="{{ asset('images/book2.png') }}" alt="كتاب ثاني">
+          <img src="{{ asset('images/book2.webp') }}" alt="كتاب ثاني">
         </div>
         <div class="content">
           <h2>العنوان الثاني</h2>
@@ -50,14 +50,14 @@
     <div class="book" data-book="3">
       <!-- Small state -->
       <div class="book-small">
-        <img src="{{ asset('images/book3.png') }}" alt="كتاب ثالث">
+        <img src="{{ asset('images/book3.webp') }}" alt="كتاب ثالث">
       </div>
       
       <!-- Expanded state -->
       <div class="book-expanded">
         <button class="close-btn">&times;</button>
         <div class="book-image">
-          <img src="{{ asset('images/book3.png') }}" alt="كتاب ثالث">
+          <img src="{{ asset('images/book3.webp') }}" alt="كتاب ثالث">
         </div>
         <div class="content">
           <h2>العنوان الثالث</h2>
