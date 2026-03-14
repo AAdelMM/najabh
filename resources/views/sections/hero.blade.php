@@ -2,8 +2,9 @@
   
   <!-- Background Globe Effect -->
   <div class="absolute inset-0">
-    <img src="{{asset('images/planet.gif')}}" alt="Globe" 
-         class="w-full h-full object-cover opacity-70">
+    <video autoplay muted loop class="w-full h-full object-cover opacity-70">
+      <source src="{{ asset('images/planet.mp4') }}" type="video/mp4">
+    </video>
     <div class="absolute inset-0 bg-black/60"></div>
   </div>
 
