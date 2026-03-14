@@ -4,7 +4,8 @@
 
 @section('content')
     @include('sections.hero')
-    @include('sections.about')
+    <!-- @include('sections.about') -->
+    @include('sections.about1')
     @include('sections.programs')
     @include('sections.service')
     @include('sections.books')
