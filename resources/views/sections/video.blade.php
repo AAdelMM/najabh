@@ -8,8 +8,22 @@
 
         <div class="video-container-grid">
             <div class="youtube-main-card">
-                <div class="iframe-wrapper">
-                    <iframe src="https://www.youtube.com/embed/r4P0oE9dHg4?si=IvtXyEkD6yTOyHQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="iframe-wrapper bg-gray-900">
+                    <iframe 
+                        id="yt-player"
+                        src="about:blank" 
+                        data-src="https://www.youtube.com/embed/r4P0oE9dHg4?si=IvtXyEkD6yTOyHQv&autoplay=1" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+                    <div id="yt-overlay" class="absolute inset-0 flex items-center justify-center cursor-pointer bg-cover bg-center" style="background-image: url('https://img.youtube.com/vi/r4P0oE9dHg4/maxresdefault.jpg');">
+                        <div class="w-16 h-16 bg-[#f2a900] rounded-full flex items-center justify-center">
+                            <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.841A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.269l9.433-5.892a1.5 1.5 0 000-2.538L6.3 2.841z"/></svg>
+                        </div>
+                    </div>
                 </div>
                
                 <div class="p-4 bg-[#0b0f19] border-t-2 border-[#f2a900]">
@@ -18,13 +32,8 @@
                 </div>
             </div>
 
-            <div class="tiktok-grid-column">
-               <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@najabh1/video/7609812876999625991" data-video-id="7609812876999625991" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@najabh1" href="https://www.tiktok.com/@najabh1?refer=embed">@najabh1</a> إذا شعرت يومًا أنك تعمل بجد… لكن لا تبني شيئًا لك، فالمشكلة ليست فيك. المشكلة في غياب المنظومة. في هذا الفيديو أشاركك بداية رحلة مختلفة مع المال. رحلة لا تطارد الثروة… بل تبنيها بوعي. <a title="الاستثمار" target="_blank" href="https://www.tiktok.com/tag/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1?refer=embed">#الاستثمار</a> <a title="يوم_التأسيس" target="_blank" href="https://www.tiktok.com/tag/%D9%8A%D9%88%D9%85_%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3?refer=embed">#يوم_التأسيس</a> <a title="الوعي_المالي" target="_blank" href="https://www.tiktok.com/tag/%D8%A7%D9%84%D9%88%D8%B9%D9%8A_%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A?refer=embed">#الوعي_المالي</a> <a title="بناء_الثروة" target="_blank" href="https://www.tiktok.com/tag/%D8%A8%D9%86%D8%A7%D8%A1_%D8%A7%D9%84%D8%AB%D8%B1%D9%88%D8%A9?refer=embed">#بناء_الثروة</a> <a title="استراتيجية" target="_blank" href="https://www.tiktok.com/tag/%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9?refer=embed">#استراتيجية</a> <a target="_blank" title="♬ الصوت الأصلي - Najabh." href="https://www.tiktok.com/music/الصوت-الأصلي-7609812915621366544?refer=embed">♬ الصوت الأصلي - Najabh.</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-                <!-- <div class="tiktok-item">
-                    <div class="iframe-wrapper-portrait">
-                        <iframe src="https://www.tiktok.com/embed/v2/7609812876999625991" allowfullscreen></iframe>
-                    </div>
-                </div> -->
+            <div id="tiktok-container" class="tiktok-grid-column min-h-[500px]">
+                <p class="text-center text-gray-600 animate-pulse">Loading Video...</p>
             </div>
         </div>
     </div>
