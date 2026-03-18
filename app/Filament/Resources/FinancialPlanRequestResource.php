@@ -11,25 +11,27 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\SelectColumn; 
-use Filament\Forms\Form;
+use Filament\Schemas\Schema;
 use Filament\Resources\Resource;
 use Filament\Tables;
-
+use Filament\Actions\Action;
+use Filament\Forms\Components\Toggle;
+use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use BackedEnum;
 
 class FinancialPlanRequestResource extends Resource
 {
     protected static ?string $model = FinancialPlanRequest::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $modelLabel = 'طلب تخطيط مالي'; // للمفرد
     protected static ?string $pluralModelLabel = 'طلبات التخطيط المالي'; // للجمع
     protected static ?string $navigationLabel = 'الطلبات'; // الاسم في القائمة الجانبية
 
-    public static function form(Form $form): Form
-    {
+public static function form(Schema $form): Schema    {
         return $form
             ->schema([
             

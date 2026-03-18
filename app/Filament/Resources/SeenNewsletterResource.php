@@ -13,19 +13,22 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
+use BackedEnum;
+use Filament\Schemas\Schema;
+
 
 
 class SeenNewsletterResource extends Resource
 {
     protected static ?string $model = SeenNewsletter::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $modelLabel = 'طلب النشرة البريدية'; // للمفرد
     protected static ?string $pluralModelLabel = 'طلبات النشرة البريدية'; // للجمع
     protected static ?string $navigationLabel = 'النشرة البريدية'; // الاسم في القائمة الجانبية
 
 
-    public static function form(Form $form): Form
+    public static function form(Schema $form): Schema
     {
         return $form
             ->schema([
