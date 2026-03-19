@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->string('status')->default('active'); // active, unsubscribed
+            $table->softDeletes();
             $table->timestamps();
         });
     }

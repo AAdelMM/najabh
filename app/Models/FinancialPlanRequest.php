@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class FinancialPlanRequest extends Model
 {
     use HasFactory;
-
+    use SoftDeletes;
     // هذا هو السطر المطلوب لحل المشكلة
     protected $fillable = [
         'first_name',
@@ -17,7 +17,7 @@ class FinancialPlanRequest extends Model
         'email',
         'category',
         'status',
-        'behavioral_notes', // إذا كنت أضفت حقل الملاحظات السلوكية
+        'behavioral_notes', 
     ];
 }
 
