@@ -11,6 +11,7 @@
     @include('sections.interest')
     @include('sections.video')
     @include('sections.news')
+    @include('sections.article')
     <!-- Add more sections as needed -->
 @endsection
 

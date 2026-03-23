@@ -33,6 +33,8 @@ class HomeController extends Controller
             'session_driver' => config('session.driver'),
             'session_files_count' => count(glob(storage_path('framework/sessions/*')))
         ];
+
+        
         
         return view('home', compact('debugInfo'));
     }

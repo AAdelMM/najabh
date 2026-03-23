@@ -21,6 +21,15 @@ Route::get('/privacy-policy', function () {
 Route::post('/register-interest', [InterestController::class, 'store'])->name('interest.store');
 Route::post('/seen-subscribe', [SeenNewsletterController::class, 'subscribe'])->name('seen.subscribe');
 
+// مسار الأرشيف (قائمة المقالات)
+Route::get('/seen-articles', [SeenNewsletterController::class, 'index'])->name('seen.index');
+
+// مسار المقال المنفرد (هذا هو السطر الذي يحل المشكلة)
+Route::get('/seen-article/{slug}', [SeenNewsletterController::class, 'show'])->name('seen.show');
+
+
+
+
 Route::get('/fix-storage', function () {
     // 1. محاولة حذف الاختصار القديم إذا كان موجوداً كملف معطل
     $shortcut = public_path('storage');
