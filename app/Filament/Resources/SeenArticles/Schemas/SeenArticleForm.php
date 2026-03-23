@@ -24,7 +24,8 @@ class SeenArticleForm
                 FileUpload::make('image')
                     ->image()
                     ->label('صورة المقال')
-                    ->visibility('public'), // هذا السطر سيقوم بنقل الصور إلى storage/app/public
+                    ->disk('public')
+                    ->visibility('public'), 
                 RichEditor::make('content')
                     ->required()
                     ->extraAttributes(['style' => 'min-height: 40vh;'])
