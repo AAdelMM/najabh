@@ -158,7 +158,7 @@
         </div>
         
         <div class="view-all-wrapper">
-            <a href="{{ route('seen.index') }}" class="view-all-link">مشاهدة الأرشيف الكامل</a>
+            <!-- <a href="{{ route('seen.index') }}" class="view-all-link">مشاهدة الأرشيف الكامل</a> -->
         </div>
     </div>
 </section>

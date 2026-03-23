@@ -24,7 +24,9 @@ class SeenArticlesTable
                     ->label(' العنوان الفرعي')
                     ->searchable(),
                 ImageColumn::make('image')
-                    ->label('صورة المقال'),
+                    ->label('صورة المقال')
+                    ->disk('public')
+                    ->visibility('public'),
                 // TextColumn::make('slug')
                 //     ->label('العنوان اللطيف')
                 //     ->searchable(),
