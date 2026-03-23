@@ -136,7 +136,7 @@
                 <div class="seen-card">
                     <div class="card-image-wrapper">
                         @if($article->image)
-                            <img src="{{ asset('storage/' . $article->image) }}" alt="{{ $article->title }}">
+                          <img src="{{ asset('storage/' . $article->image) }}" class="hero-image-bg" alt="{{ $article->title }}">
                         @else
                             <div class="placeholder-bg"></div>
                         @endif
