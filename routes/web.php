@@ -31,25 +31,24 @@ Route::get('/seen-article/{slug}', [SeenNewsletterController::class, 'show'])->n
 
 
 Route::get('/fix-storage', function () {
-    // 1. محاولة حذف الاختصار القديم إذا كان موجوداً كملف معطل
-    $shortcut = public_path('storage');
-    if (file_exists($shortcut)) {
-        File::delete($shortcut);
-    }
-
-    // 2. محاولة إنشاء الاختصار باستخدام وظيفة PHP الأساسية
     try {
+        // محاولة إنشاء الرابط باستخدام أمر لارايفل
         Artisan::call('storage:link');
-        return "تم ربط الـ Storage بنجاح عبر Artisan!";
+        return "تم إنشاء رابط التخزين بنجاح!";
     } catch (\Exception $e) {
-        // 3. إذا فشل Artisan (بسبب تعطيل exec)، سنحاول يدوياً
+        // إذا فشل الأمر، سنحاول يدوياً باستخدام دالة PHP
         $target = storage_path('app/public');
         $link = public_path('storage');
         
-        if (symlink($target, $link)) {
-            return "تم إنشاء الـ Symlink يدوياً بنجاح!";
-        } else {
-            return "فشل النظام في إنشاء الرابط، يرجى التواصل مع الدعم الفني لفتح وظيفة symlink.";
+        if (file_exists($link)) {
+            return "الرابط موجود بالفعل أو المجلد موجود في public/storage";
         }
+
+        // محاولة الربط اليدوي
+        if (symlink($target, $link)) {
+            return "تم الربط اليدوي بنجاح!";
+        }
+        
+        return "فشل الربط، قد تكون دالة symlink معطلة أيضاً. تواصل مع الدعم الفني للسيرفر.";
     }
 });
