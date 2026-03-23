@@ -146,10 +146,10 @@
                     <div class="card-body">
                         <h3 class="article-title">{{ $article->title }}</h3>
                         <p class="article-excerpt">{{ Str::limit($article->subtitle, 90) }}</p>
-                        <a href="{{ route('seen.show', $article->slug) }}" class="btn-read-more">
-                            تفاصيل التحليل
-                            <span class="arrow-icon">←</span>
-                        </a>
+                            <a href="{{ route('seen.show', ['slug' => $article->slug]) }}" class="btn-read-more">
+                                تفاصيل التحليل
+                                <span class="arrow-icon">←</span>
+                            </a>
                     </div>
                 </div>
             @empty

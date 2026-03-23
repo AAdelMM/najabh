@@ -27,4 +27,16 @@ class SeenNewsletterController extends Controller
         // 3. العودة مع رسالة نجاح
         return back()->with('success_seen', 'تم انضمامك لنشرة "سين" بنجاح.. ترقب القراءة الأولى.');
     }
+
+    public function show($slug)
+{
+    // جلب المقال من قاعدة البيانات
+    $article = \App\Models\SeenArticle::where('slug', $slug)
+                ->where('is_published', true) // لضمان عدم دخول الزوار للمقالات غير المنشورة
+                ->firstOrFail(); // تعيد 404 إذا كان الرابط خطأ
+
+    // إرسال البيانات لصفحة العرض المنفصلة
+    return view('seenShow', compact('article'));
+}
+
 }
